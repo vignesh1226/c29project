@@ -12,6 +12,7 @@ function setup(){
     world = engine.world;
 
     ball = new Ball(400,100,40);
+    ballholder = new Ground(400,170,30,20);
 
     ground = new Ground(500,380,1000,20);
     box1 = new Box(680,350,40,40);
@@ -53,6 +54,7 @@ function draw(){
     Engine.update(engine);
     
     ball.display();
+    ballholder.display();
 
     ground.display();
     box1.display();
